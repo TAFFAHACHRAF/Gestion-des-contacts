@@ -1,6 +1,7 @@
 #ifndef _Contact_
 	#define _Contact_
 	#include<math.h>
+	#include<time.h>
 	class contact{
 	private:
 		int id;
@@ -21,7 +22,7 @@
 			this->email=email;
 		}
 		contact(contact *c){
-			this->id=c->id;
+			id=rand();
 			this->nom=c->nom;
 			this->tel=c->tel;
 			this->email=c->email;
@@ -58,4 +59,3 @@
 		}
 	};
 #endif 
-
